@@ -125,11 +125,30 @@ input[type="range"] {
   accent-color: #246bfe;
 }
 
+.option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-top: 10px;
+  color: #354057;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.option input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: #246bfe;
+}
+
 .presets {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .presets button {

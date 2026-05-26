@@ -9,6 +9,10 @@ const HOLD_ACTIVATION_DELAY_MS = 280;
 
 const watchedVideos = new WeakSet();
 let currentSettings = { ...DEFAULT_SETTINGS };
+let tabOverride = {
+  enabled: false,
+  speed: DEFAULT_SETTINGS.speed
+};
 let isApplyingRate = false;
 let enforceTimer = null;
 let holdState = {
@@ -26,6 +30,10 @@ function normalizeSpeed(value, fallback = DEFAULT_SETTINGS.speed) {
 function getTargetRate() {
   if (holdState.active) {
     return normalizeSpeed(currentSettings.holdSpeed, DEFAULT_SETTINGS.holdSpeed);
+  }
+
+  if (tabOverride.enabled) {
+    return normalizeSpeed(tabOverride.speed, currentSettings.speed);
   }
 
   return normalizeSpeed(currentSettings.speed, DEFAULT_SETTINGS.speed);
@@ -224,6 +232,31 @@ function applySettings(settings = {}) {
   enforceAllVideos();
 }
 
+function applyTabOverride(settings = {}) {
+  tabOverride = {
+    enabled: settings.enabled === true,
+    speed: normalizeSpeed(settings.speed ?? tabOverride.speed, currentSettings.speed)
+  };
+
+  if (!tabOverride.enabled) {
+    resetHoldSpeed();
+  }
+
+  scanVideos();
+  enforceAllVideos();
+}
+
+function getPopupSettings() {
+  return {
+    enabled: currentSettings.enabled,
+    speed: currentSettings.speed,
+    holdSpeed: currentSettings.holdSpeed,
+    tabOverrideEnabled: tabOverride.enabled,
+    tabSpeed: tabOverride.speed,
+    effectiveSpeed: getTargetRate()
+  };
+}
+
 chrome.storage.sync.get(DEFAULT_SETTINGS, applySettings);
 
 chrome.storage.onChanged.addListener((changes, areaName) => {
@@ -236,14 +269,31 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
   });
 });
 
-chrome.runtime.onMessage.addListener((message) => {
-  if (message?.type !== "VIDEO_3X_APPLY_SETTINGS") return;
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message?.type === "VIDEO_3X_GET_SETTINGS") {
+    sendResponse(getPopupSettings());
+    return;
+  }
 
-  applySettings({
-    enabled: message.enabled,
-    speed: message.speed,
-    holdSpeed: message.holdSpeed
-  });
+  if (message?.type === "VIDEO_3X_APPLY_SETTINGS") {
+    applySettings({
+      enabled: message.enabled,
+      speed: message.speed,
+      holdSpeed: message.holdSpeed
+    });
+
+    sendResponse(getPopupSettings());
+    return;
+  }
+
+  if (message?.type === "VIDEO_3X_APPLY_TAB_OVERRIDE") {
+    applyTabOverride({
+      enabled: message.enabled,
+      speed: message.speed
+    });
+
+    sendResponse(getPopupSettings());
+  }
 });
 
 installHoldShortcut();

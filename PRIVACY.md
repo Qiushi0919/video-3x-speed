@@ -8,4 +8,6 @@ The extension runs locally in the browser and changes the playback speed of HTML
 - the selected playback speed
 - the selected hold-to-speed shortcut speed
 
+Temporary per-tab speed overrides are kept only inside the current tab while it is open. They are not collected or transmitted.
+
 No browsing history, page content, video content, keyboard input, account information, analytics, or personally identifiable information is collected by this extension.

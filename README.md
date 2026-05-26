@@ -36,6 +36,7 @@ The extension is intentionally small: no analytics, no remote code, no account s
 | Persistent control | If a page resets playback speed, the extension applies your selected speed again. |
 | Toolbar popup | Pause the extension or switch between preset speeds in one click. |
 | Fine adjustment | Use the slider to choose any speed from `0.25x` to `5x`. |
+| Per-tab speed | Keep one tab at course speed and another tab at normal music speed. |
 | Hold-to-speed shortcut | Hold the Right Arrow key to switch temporarily to the hold speed, then release to return. |
 | Privacy-first | Stores only the enable state and selected speed through Chrome storage. |
 
@@ -49,7 +50,7 @@ The extension is intentionally small: no analytics, no remote code, no account s
   <img src="store-assets/small-promo-440x280.png" width="440" alt="Video 3x Speed promotional tile">
 </p>
 
-The popup is designed to stay quiet and task-focused: one switch, a regular speed control, a hold-to-speed control, and four common presets.
+The popup is designed to stay quiet and task-focused: one switch, a regular speed control, a per-tab override, a hold-to-speed control, and four common presets.
 
 On sites where the built-in player exposes only limited speed choices, Video 3x Speed can still apply a higher HTML5 playback rate through its own toolbar control.
 
