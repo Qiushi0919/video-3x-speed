@@ -2,6 +2,10 @@
   <img src="images/icon-128.png" width="96" height="96" alt="Video 3x Speed icon">
 </p>
 
+<p align="center">
+  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
+</p>
+
 <h1 align="center">Video 3x Speed</h1>
 
 <p align="center">
@@ -90,6 +94,7 @@ video-3x-speed/
 |-- store-assets/
 |-- scripts/
 |-- PRIVACY.md
+|-- README.zh-CN.md
 `-- STORE_LISTING.md
 ```
 
