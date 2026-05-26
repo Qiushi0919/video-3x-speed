@@ -42,6 +42,14 @@ The extension is intentionally small: no analytics, no remote code, no account s
 
 The popup is designed to stay quiet and task-focused: one switch, one speed value, one slider, and four common presets.
 
+## Real-World Usage
+
+<p align="center">
+  <img src="store-assets/usage-bilibili.png" width="920" alt="Video 3x Speed running on Bilibili">
+</p>
+
+On sites where the built-in player exposes only limited speed choices, Video 3x Speed can still apply a higher HTML5 playback rate through its own toolbar control.
+
 ## Icon Set
 
 | 16px | 32px | 48px | 128px |
