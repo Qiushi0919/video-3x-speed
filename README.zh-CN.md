@@ -78,13 +78,13 @@ powershell -ExecutionPolicy Bypass -File scripts/build.ps1
 Chrome Web Store 上传用的 ZIP 会生成在：
 
 ```text
-dist/video-3x-speed-chrome-web-store.zip
+dist/video-speed-freestyle-chrome-web-store.zip
 ```
 
 ## 项目结构
 
 ```text
-video-3x-speed/
+video-speed-freestyle/
 |-- manifest.json
 |-- content.js
 |-- popup.html

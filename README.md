@@ -80,13 +80,13 @@ powershell -ExecutionPolicy Bypass -File scripts/build.ps1
 The Chrome Web Store upload file is created at:
 
 ```text
-dist/video-3x-speed-chrome-web-store.zip
+dist/video-speed-freestyle-chrome-web-store.zip
 ```
 
 ## Project Structure
 
 ```text
-video-3x-speed/
+video-speed-freestyle/
 |-- manifest.json
 |-- content.js
 |-- popup.html

@@ -2,7 +2,7 @@ $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $PSScriptRoot
 $dist = Join-Path $root "dist"
-$package = Join-Path $dist "video-3x-speed-chrome-web-store.zip"
+$package = Join-Path $dist "video-speed-freestyle-chrome-web-store.zip"
 $staging = Join-Path $dist "package"
 
 if (Test-Path -LiteralPath $staging) {
