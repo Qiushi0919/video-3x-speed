@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="images/icon-128.png" width="96" height="96" alt="Video 3x Speed icon">
+  <img src="images/icon-128.png" width="96" height="96" alt="Video Speed Freestyle by Qiushi icon">
 </p>
 
 <p align="center">
   <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-<h1 align="center">Video 3x Speed</h1>
+<h1 align="center">Video Speed Freestyle by Qiushi</h1>
 
 <p align="center">
-  A polished Manifest V3 Chrome extension for keeping HTML5 videos at your preferred high-speed playback rate.
+  A polished Manifest V3 Chrome extension for tuning HTML5 video speed your own way.
 </p>
 
 <p align="center">
@@ -19,12 +19,12 @@
 </p>
 
 <p align="center">
-  <img src="store-assets/usage-bilibili.png" width="920" alt="Video 3x Speed running on Bilibili">
+  <img src="store-assets/usage-bilibili.png" width="920" alt="Video Speed Freestyle by Qiushi running on Bilibili">
 </p>
 
 ## Overview
 
-Video 3x Speed gives every standard HTML5 video a focused speed control layer. It defaults to `3x`, keeps the chosen speed when pages try to reset playback rate, and includes a compact toolbar popup for quick adjustments.
+Video Speed Freestyle by Qiushi gives every standard HTML5 video a focused speed control layer. It defaults to `3x`, keeps the chosen speed when pages try to reset playback rate, and includes a compact toolbar popup for quick adjustments.
 
 The extension is intentionally small: no analytics, no remote code, no account system, and no background service doing extra work.
 
@@ -43,16 +43,16 @@ The extension is intentionally small: no analytics, no remote code, no account s
 ## Interface
 
 <p align="center">
-  <img src="store-assets/screenshot-1280x800.png" width="920" alt="Video 3x Speed product preview">
+  <img src="store-assets/screenshot-1280x800.png" width="920" alt="Video Speed Freestyle by Qiushi product preview">
 </p>
 
 <p align="center">
-  <img src="store-assets/small-promo-440x280.png" width="440" alt="Video 3x Speed promotional tile">
+  <img src="store-assets/small-promo-440x280.png" width="440" alt="Video Speed Freestyle by Qiushi promotional tile">
 </p>
 
 The popup is designed to stay quiet and task-focused: one switch, a regular speed control, a per-tab override, a hold-to-speed control, and four common presets.
 
-On sites where the built-in player exposes only limited speed choices, Video 3x Speed can still apply a higher HTML5 playback rate through its own toolbar control.
+On sites where the built-in player exposes only limited speed choices, Video Speed Freestyle by Qiushi can still apply a higher HTML5 playback rate through its own toolbar control.
 
 ## Icon Set
 
@@ -103,7 +103,7 @@ video-3x-speed/
 
 ## Privacy
 
-Video 3x Speed does not collect, transmit, sell, or share user data. It only stores:
+Video Speed Freestyle by Qiushi does not collect, transmit, sell, or share user data. It only stores:
 
 - whether the extension is enabled
 - the selected playback speeds

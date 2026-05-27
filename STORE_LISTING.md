@@ -2,15 +2,15 @@
 
 ## Name
 
-Video 3x Speed
+Video Speed Freestyle by Qiushi
 
 ## Summary
 
-Set HTML5 videos to high speed with a toolbar control, per-tab speed, and hold-to-speed shortcut.
+Freestyle HTML5 video speed with global, per-tab, and hold-to-speed controls.
 
 ## Description
 
-Video 3x Speed keeps HTML5 videos playing at your chosen speed. It defaults to 3x and includes a small toolbar popup for pausing the extension, choosing another playback rate, setting a current-tab-only speed, or setting the temporary speed used while holding the Right Arrow key.
+Video Speed Freestyle by Qiushi keeps HTML5 videos playing at your chosen speed. It defaults to 3x and includes a small toolbar popup for pausing the extension, choosing another playback rate, setting a current-tab-only speed, or setting the temporary speed used while holding the Right Arrow key.
 
 The extension works locally in your browser. It does not collect analytics, browsing history, page content, video content, or personal data.
 

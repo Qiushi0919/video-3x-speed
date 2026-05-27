@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Video 3x Speed",
-  "short_name": "3x Speed",
-  "version": "1.2.0",
-  "description": "Set HTML5 videos to high speed with a toolbar control and hold-to-speed shortcut.",
+  "name": "Video Speed Freestyle by Qiushi",
+  "short_name": "SpeedStyle",
+  "version": "1.2.1",
+  "description": "Freestyle HTML5 video playback speed with global, per-tab, and hold-to-speed controls.",
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",
@@ -11,7 +11,7 @@
     "128": "images/icon-128.png"
   },
   "action": {
-    "default_title": "Video 3x Speed",
+    "default_title": "Video Speed Freestyle by Qiushi",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "images/icon-16.png",
